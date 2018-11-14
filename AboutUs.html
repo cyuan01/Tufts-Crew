@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Tufts Crew</title>
+
+    <meta charset="utf-8" />
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <meta charset="utf-8">
+
+    <!-- BootStrap Stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleAbout.css" />
+
+
+  </head>
+
+  
+  <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">Tufts Crew</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">News</a></li>
+
+          <!-- Info Tab -->
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+
+              <li><a href="Race_Schedule.html">Race Schedule</a></li>
+              <li><a href="Course.html">Course</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+          </li>
+
+          <!-- Team Tab-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Team_Feed.html">Team Feed</a></li>
+              <li><a href="Practice_Schedule.html">Practice Schedule</a></li>
+            </ul>
+          </li>
+
+          <!-- Tools Tab-->
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Lactate.html">Lactate</a></li>
+              <li><a href="Randomizer.html">Randomizer</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container ourcontent">
+        <div class="info"> </div>
+        <h1 id="sectionTitle"> About Tufts Crew</h1>
+
+        <h3 class = distance> The Shoemaker Boathouse </h3>
+
+
+        <img class='img-responsive' src="boathouse.jpg" alt="Tufts Shoemaker Boathouse">
+
+        <p class = distance>  The William A. Shoemaker Boathouse donated by David Shoemaker, was 
+            erected in 2006 and held its first regatta in 2007. Our modern boathouse incoroporates 
+            classic features of boathouses around the country as well as emerging technologies 
+            in the sport of crew, such as our indoor boat simulators and our ergometers with VR 
+            headset attachments.</p>
+
+        <h3 class = distance> Shoemaker Boathouse Location </h3>
+
+        <div id="map"></div>
+        
+        <ul class = distance>
+          <h4> We are located:</h4>
+          <li>0.4 miles from Wellington Orange Line with shuttle service to and from Rivers Edge</li>
+          <li>4.0 miles from Boston</li>
+          <li>3.5 miles from Cambridge</li>
+        </ul>
+      </div>
+
+
+        <div class="PAGEFOOTER"></div>
+
+        <script>
+            function initMap() {
+              var myLatLng = {lat: 42.410480, lng: -71.073915};
+
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: myLatLng
+              });
+
+              var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Shoemaker Boathouse'
+              });
+            }
+        </script>
+
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBimiq9LGsIZ6wemBF4vNba-X-QMbqfuc&callback=initMap"
+      type="text/javascript"></script>
+          </div>
+
+
+  </body>
+</html>

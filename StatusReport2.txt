@@ -1,0 +1,31 @@
+
+ (1) what was accomplished during the week,
+ (2) challenges and issues team faced during the week
+ (3) your goals for the next week.
+
+
+
+David Knopov, Chadd Yuan, Ryan , Amun #2:
+
+(1) This week I worked on setting up the google calendar API for Practice Schedules.
+I added all the practices, and races from the tufts team crew schedule. I also added a 
+spreadsheet for players to log in their workouts. I, Chadd, worked on the preliminary
+steps of implementing the announcemets section for the team feed page. And Ryan implemented bootstrap
+and worked on a Heroku server to retrieve roster information so we dont have to store it on the website.
+Amun finished the AboutUs page by incorporating the Google Maps API and researched information for the 
+Lactate module such as the equation and formatting with bootstrap.
+
+
+(2)
+One issue I faced is figuring out how to best include the google spreadsheet of all the google calendars.
+I decided to include a link at the top of the practice schedule.
+Another issue we faced on the team feed page was how to design/ implement the announcements section
+to allow only certain people to post and have it always show up when other people go to the page. Another
+issue faced was reconciling the style elements across all of the pages. Some backgrounds seem to work well
+with some pages, but make the content virtually unreadable on other pages.
+
+(3) My goal for next week is to finish up making the calendar and spreadsheet look nice, and then tackle
+another problem such as the Randomizer ( Depending on my discussion with the team next week.)
+My (chadd) goal for next week is to figure out how to properly set up a true announcements section
+perhaps using the server knowledge we just gained. Another goal is to finish the lactate module
+and package other already implemented features into modules.

@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  background-color: #5292cb;
+
+  background-image: url("mlax.png");
+  background-repeat: repeat;
+}
+
+
+
+/*-----------NAV BAR STYLING START---------------------*/
+
+/* navbar */
+.navbar-default {
+    background-color: #78450c;
+    border-color: #452804;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: white;
+    background-color: #452804;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;
+    background-color: #452804;
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #333;
+    }
+}
+
+/*-----------NAV BAR STYLING END---------------------*/
+
+
+.ourcontent {
+  background-color: white;
+  padding-top: 50px;
+
+}
+
+.btn {
+  color: white ;
+  background-color: #5292cb;
+}
+
+
+
+.WorkoutLog {
+  background-color: white;
+  color: white;
+}
+
+.Practice_Log
+{
+  text-align: center;
+}
+
+.responsiveCal {
+ 
+position: relative; padding-bottom: 56.25%; width:100%; height: 0; overflow: hidden;
+ 
+}
+ 
+.responsiveCal iframe {
+ 
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+ 
+}
+
+#errorMsg
+{
+  color:red; 
+  display: none;
+}
+
+#displayBoats
+{
+    display: none;
+}
+
+#warmup
+{
+  color:red;
+  background-color: #78450c;
+  border-color: #452804;
+  padding:2px;
+}
+
+#m0
+{
+  color:yellow;
+  background-color: #78450c;
+  border-color: #452804;
+  padding:2px;
+}
+
+#m500
+{
+  color:#fc28fc;
+  background-color: #78450c;
+  border-color: #452804;
+  padding:2px;
+}
+
+#m1000
+{
+  color:#29fd2f;
+  background-color: #78450c;
+  border-color: #452804;
+  padding:2px;
+}
+
+#m1500
+{
+  color:#ef672f;
+  background-color: #78450c;
+  border-color: #452804;
+  padding:2px;
+}
+
+.courseText {
+  color: black;
+  font-size: 15px; 
+  background-color: white;
+}
+
+#lactate_content {
+  border: 1px white solid;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 5px;
+  margin-top: 25px;
+
+}
+
+.twitter_timeline {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10%;
+}
+
+.col-8-style {
+  background-color: #5292cb;
+  color: white;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20%
+}
+
+.team_button {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.team_title {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #5292cb;
+  padding-left: 20px;
+}
+
+.team_title_2 {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #5292cb;
+  background-color: white;
+  padding-left: 20px;
+}
+.team_title_3 {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: #78450c;
+  padding-left: 20px;
+}
+
+.carousel-caption {
+  transform: translate(0%, -30%);
+  animation: fadeIn 3s;
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+
+
+
+#news_content {
+  background-color: #696868;
+  border: 1px #696868 solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+#announce_content {
+  border: 1px #78450c solid;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

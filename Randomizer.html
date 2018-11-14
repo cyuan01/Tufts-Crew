@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Tufts Crew</title>
+
+    <meta charset="utf-8">
+
+    <!-- BootStrap Stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="randomizer.js">
+    </script>
+
+
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">Tufts Crew</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">News</a></li>
+
+          <!-- Info Tab -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Race_Schedule.html">Race Schedule</a></li>
+              <li><a href="Course.html">Course</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+          </li>
+
+          <!-- Team Tab-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Team_Feed.html">Team Feed</a></li>
+              <li><a href="Practice_Schedule.html">Practice Schedule</a></li>
+            </ul>
+          </li>
+
+          <!-- Tools Tab-->
+
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Lactate.html">Lactate</a></li>
+              <li><a href="Randomizer.html">Randomizer</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+
+    <div class="ourcontent container" >
+      <h1>Random Line-up Tool </h1>
+      <h3>Select 16 rowers and click 'Randomize' to create two random 8's</h3>
+      <h4 id="errorMsg">Please select 16 rowers!</h3>
+      <div class="row">
+        <div class="col-sm-8" id="buttons"></div>
+        <div class='col-sm-2'>
+          <button type="button" class="btn" id="button" >Randomize</button>
+
+          <div id="displayBoats">
+            <h3>Boat 1 </h3>
+            <p id="displayBoat1"></p>
+            <h3>Boat 2 </h3>
+            <p id="displayBoat2"></p>
+          </div
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

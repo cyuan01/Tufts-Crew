@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Tufts Crew</title>
+
+    <meta charset="utf-8">
+
+    <!-- BootStrap Stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="announcement.js"></script>
+  </head>
+  
+    <body onload = "get_data()">
+    
+    <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">Tufts Crew</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">News</a></li>
+
+          <!-- Info Tab -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Info
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Race_Schedule.html">Race Schedule</a></li>
+              <li><a href="Course.html">Course</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+          </li>
+
+          <!-- Team Tab-->
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Team_Feed.html">Team Feed</a></li>
+              <li><a href="Practice_Schedule.html">Practice Schedule</a></li>
+            </ul>
+          </li>
+
+          <!-- Tools Tab-->
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Lactate.html">Lactate</a></li>
+              <li><a href="Randomizer.html">Randomizer</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+      </div>
+      </nav>
+    </div>
+
+    <div class="container ourcontent">
+        <div class = "row">
+            <div class = "col-sm-8">
+
+                <div class = "team_title">
+                    <h1>Team Announcements</h1>
+                </div>
+
+                <div class = "team_button">
+
+
+                    <!-- Button trigger modal -->
+                    <button class="btn btn-default" data-toggle="modal" data-target="#myModalNorm">
+                        New Announcement +
+                    </button>
+
+                </div>
+
+
+
+                <div class = "container-fluid col-8-style">
+                  <div class='container-fluid' id = "content">
+                      <h2>No New Announcements</h2>
+                  </div>
+                </div>    
+            </div>
+
+
+            <div class = "col-sm-4">
+                <h1 style = "padding-top: 10px;">Team Tweets</h1>
+                <a class="twitter-timeline" data-height="800" data-theme="light" href="https://twitter.com/TuftsRowing?ref_src=twsrc%5Etfw">Tweets by TuftsRowing</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+
+                <div class = "announcements">
+
+
+                    <!-- Button trigger modal 
+                    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalNorm">
+                        New Announcemnt +
+                    </button>-->
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" 
+                       aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <button type="button" class="close" 
+                                    data-dismiss="modal">
+                                        <span aria-hidden="true">&times;</span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+
+                                    <h4 class="modal-title" id="myModalLabel">
+                                      New Announcement
+                                    </h4>
+                    </div>
+                              
+                    <!-- Modal Body -->
+                    <div class="modal-body">         
+                        <form id = "announcement" role="form">
+
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                    <input type="text" class="form-control"
+                                    id="username" placeholder="Enter Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="content">Announcement</label>
+                                    <input type="text" class="form-control"
+                                     placeholder="Enter Announcement"/>
+                            </div>
+                            <button id = "post" class="btn btn-default">Post</button>
+                        </form>
+                    </div>
+                              
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+  </div>
+
+
+
+    <script>
+
+        var button = document.getElementById("post")
+        button.addEventListener("click", function(){
+            
+            var form = document.getElementById("announcement");
+            var name = form.elements[0].value;
+            var content = form.elements[1].value;
+
+
+            send_data(name,content);
+          });
+        
+    </script>
+    </body>
+</html>
+

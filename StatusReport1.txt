@@ -1,0 +1,64 @@
+ (1) what was accomplished during the week,
+ (2) challenges and issues team faced during the week
+ (3) your goals for the next week.
+
+
+Status Check-up #1:
+
+Ryan Magnuson Update #1:
+
+1. This week I worked on updating the navbar to include drop down menus. Originally we were going to use bootstrap, but later decided that it lacked the amount of desired customization. 
+
+2. One challange I've faced this week is makignthe sticky nav bar smooth at the end of a scroll, still working on it but I'm almost done.
+
+3. For next week I would like to have the nav bar completely done, and get to work on filling out the tool bar and working on the back end for storing the roster and the blog. 
+
+
+
+Amun Sahrawat Update #1:
+
+1. This week I worked on setting up the foundation for the About Us page with sample text and appropriate images. I created a style sheet
+specifically for the page which will be used to modify the Google maps module on the page.
+
+2. One challenge I face this week was incoroporating the Google maps API in the way that I wanted to. I wanted to incorporate some sort
+of form for the client to input a location and we could calculate the distance from the boathouse to the input location but I struggled
+coming up with an adequate design.
+
+3. For next week I will completely finish the Google Maps portion of the page and make significant progresson the Roster or Lactate pages.
+
+
+
+
+David Knopov Update #1:
+
+(1) This week I worked on setting up the google calendar API for Practice Schedules.
+I managed to get a blank calendar on to the Practice_Schedule.html.
+
+
+(2)
+One issue I faced is figuring out how to obtain this google calendar and how to present it
+in the best way possible. Another one was a way to organize our website so that it would be
+user-friendly
+
+(3) My goal for next week is to add events and create the Race_Schedule google calendar as well.
+	An Ambitious goal would be to find a way to attach a google spreadsheet that will log all
+	the athletes workouts for each practice.
+
+Chadd Yuan Update #1:
+
+(1) This week I worked on implementing the twitter API and setting up the 
+team_feed page. I currently have succesfuly implemented a Tufts Crew twitter
+feed that displays the latest posts.
+
+(2) Luckily, I did not face too many issues as the twitter API was well docuemnted. I did
+try and implement a instagram API, but struggled as the instragram API had a lot of 
+restrictions and thus had to switch to twitter.
+
+(3) My goals for next week is to have the news feed page finished by implementing the 
+public news functionality and an anouncements section that somehow (not decided yet) 
+allows certain or all team members to post in a input box some announcement to be
+shared with everyone else. 
+
+# Comments by Ming
+* In the future, you can have just one short status report for everyone.
+* " but struggled as the instragram API had a lot of restrictions " = did you see my post on the IG API changes on Piazza?  All is not well for FB.
